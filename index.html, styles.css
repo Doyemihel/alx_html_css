@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,16 +29,19 @@
       <a href="https://github.com/SoladoyeMicheal" target="_blank">GitHub</a>
     </p>
   </section>
-<body class="works_on_smartphone">
-  <header>Content of the header tag</header>
-  <main>
-    <article>Content of the article tag</article>
-
-    <aside>Content of the aside tag</aside>
-  </main>
-  <footer>2025 SoladoyeMicheal</footer>
+  <footer>
+    <p>&copy; 2025 JSoladoye Micheal</p>
+  </footer>
+<article>
+  <h2>Welcome to My Page</h2>
+  <p>This is my custom article section. I styled it myself!</p>
+</article>
 </body>
-
+<header>
+    <li class="logo">&#127760;</li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+</header>
     </ul>
   </nav>
 
