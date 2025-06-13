@@ -307,9 +307,106 @@
         </div>
     </div>
 </section>
+<!-- ... (previous HTML content, after the closing quotes-section) ... -->
+
+<section class="tutorials-section">
+    <div class="container">
+        <h2>Most <span>popular</span> tutorials</h2>
+        <div class="video-grid">
+            <!-- Video Card 1 -->
+            <div class="video-card">
+                <div class="video-thumbnail-wrapper">
+                    <img src="https://placehold.co/300x200/FF6565/FFFFFF?text=Video+1" alt="Diagonal Smile Tutorial" class="video-thumbnail">
+                    <i class="fas fa-play-circle play-icon"></i> <!-- Play button icon -->
+                </div>
+                <h3>Diagonal Smile</h3>
+                <p class="video-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="video-author">
+                    <img src="https://placehold.co/30x30/FF6565/FFFFFF?text=PM" alt="Phillip Massey" class="author-avatar">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="video-rating">
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star"></i> <!-- Unfilled star -->
+                    <span class="duration">8 min</span>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="video-card">
+                <div class="video-thumbnail-wrapper">
+                    <img src="https://placehold.co/300x200/FF6565/FFFFFF?text=Video+2" alt="Sad Smile Tutorial" class="video-thumbnail">
+                    <i class="fas fa-play-circle play-icon"></i>
+                </div>
+                <h3>Sad Smile</h3>
+                <p class="video-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="video-author">
+                    <img src="https://placehold.co/30x30/FF6565/FFFFFF?text=PM" alt="Phillip Massey" class="author-avatar">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="video-rating">
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="duration">8 min</span>
+                </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="video-card">
+                <div class="video-thumbnail-wrapper">
+                    <img src="https://placehold.co/300x200/FF6565/FFFFFF?text=Video+3" alt="Natural Smile Tutorial" class="video-thumbnail">
+                    <i class="fas fa-play-circle play-icon"></i>
+                </div>
+                <h3>Natural Smile</h3>
+                <p class="video-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="video-author">
+                    <img src="https://placehold.co/30x30/FF6565/FFFFFF?text=PM" alt="Phillip Massey" class="author-avatar">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="video-rating">
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="duration">8 min</span>
+                </div>
+            </div>
+
+            <!-- Video Card 4 -->
+            <div class="video-card">
+                <div class="video-thumbnail-wrapper">
+                    <img src="https://placehold.co/300x200/FF6565/FFFFFF?text=Video+4" alt="Happy Smile Tutorial" class="video-thumbnail">
+                    <i class="fas fa-play-circle play-icon"></i>
+                </div>
+                <h3>Happy Smile</h3>
+                <p class="video-description">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <div class="video-author">
+                    <img src="https://placehold.co/30x30/FF6565/FFFFFF?text=PM" alt="Phillip Massey" class="author-avatar">
+                    <span>Phillip Massey</span>
+                </div>
+                <div class="video-rating">
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star filled"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="duration">8 min</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ... (rest of your HTML, typically the footer) ... -->
 
 <!-- ... (rest of your HTML, typically the footer would follow) ... -->
     <!-- Footer would typically go here -->
-</body>
+     </body>
 </html>
-
