@@ -241,7 +241,7 @@
         }
     </style>
 </head>
-<body>
+  <body class="works_on_smartphone"></body>
     <header>
         <a href="#" class="header-logo">
             <span role="img" aria-label="smiley face">&#128512;</span> SmileSchool
@@ -290,7 +290,26 @@
             </div>
         </section>
     </main>
+<!-- ... (previous HTML content, ensure you close your main tag if it's open) ... -->
 
+<section class="quotes-section">
+    <div class="quote-content">
+        <div class="quote-avatar">
+            <img src="https://placehold.co/150x150/FF6565/FFFFFF?text=PN" alt="Person Name">
+        </div>
+        <div class="quote-text-area">
+            <p class="quote-text">
+                « Those tutorials are concise and go straight to the point. I can't think of a better
+                place to learn smiling. And it's so fun!
+            </p>
+            <p class="quote-author">Person Name</p>
+            <p class="quote-title">weather presenter</p>
+        </div>
+    </div>
+</section>
+
+<!-- ... (rest of your HTML, typically the footer would follow) ... -->
     <!-- Footer would typically go here -->
 </body>
 </html>
+
