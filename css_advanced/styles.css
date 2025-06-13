@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileSchool - Get Schooled</title>
+    <!--
+        Link to Google Fonts for 'Source Sans Pro' or a similar sans-serif font,
+        and 'Spin Cycle OT' if it were available via a CDN (using a fallback font for now).
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load Font Awesome for icons if needed, though not explicitly used in this section for specific icons -->
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* General Body Styling & Font Defaults */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', 'Inter', sans-serif; /* Prioritize Source Sans Pro, then Inter, then generic sans-serif */
+            line-height: 1.6;
+            color: #333; /* Default text color */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #000; /* Dark background as per design */
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between; /* Space logo and nav */
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .header-logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between emoji and text */
+        }
+
+        .header-logo span {
+            font-size: 24px; /* Adjust emoji size */
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px; /* Space between navigation items */
+            flex-wrap: wrap; /* Allow nav items to wrap */
+            justify-content: center; /* Center nav items when wrapped */
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #FF6565; /* Hover effect as per typical alx projects */
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            background-image: url('https://placehold.co/1920x1080/444/EEEEEE/png?text=Smiling+Woman+Background'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            min-height: 600px; /* Adjust as needed for content height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white; /* Text color over background image */
+            padding: 50px 20px;
+            position: relative; /* For potential overlays or absolute positioning of elements */
+        }
+
+        .hero-content {
+            z-index: 10; /* Ensure content is above potential overlays */
+        }
+
+        .hero-section h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add slight shadow for readability */
+        }
+
+        .hero-section .subtitle {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-section .subtitle span {
+            font-weight: 700; /* Make SMILES GRIN LAUGH bold */
+        }
+
+        .hero-section button {
+            background-color: #FF6565; /* Red color as per design */
+            color: white;
+            border: none;
+            border-radius: 25px; /* Rounded corners */
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .hero-section button:hover {
+            opacity: 0.9;
+        }
+
+        /* "Learn from the Pros" Section Styling */
+        .pros-section {
+            background-color: #000; /* Dark background for this section */
+            color: white;
+            padding: 80px 20px; /* Increased padding top/bottom */
+            text-align: center;
+        }
+
+        .pros-section h2 {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 50px; /* Space below heading */
+        }
+
+        .pros-section h2 span {
+            font-weight: 700; /* Make 'pros' bold */
+        }
+
+        .pros-grid {
+            display: flex;
+            justify-content: center; /* Center the pro cards */
+            gap: 40px; /* Space between cards */
+            flex-wrap: wrap; /* Allow cards to wrap to next line on smaller screens */
+            max-width: 1200px; /* Limit width of grid */
+            margin: 0 auto; /* Center the grid */
+        }
+
+        .pro-card {
+            flex: 0 0 calc(25% - 30px); /* Approx 4 cards per row, accounting for gap */
+            max-width: 200px; /* Max width for each card */
+            text-align: center;
+            margin-bottom: 30px; /* Space between rows of cards */
+        }
+
+        .pro-card img {
+            width: 150px; /* Larger image size */
+            height: 150px; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make images circular */
+            object-fit: cover; /* Ensure image covers the area */
+            border: 5px solid #FF6565; /* Add a border matching button color */
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add subtle shadow */
+        }
+
+        .pro-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #FF6565; /* Name color */
+        }
+
+        .pro-card p {
+            font-size: 14px;
+            color: #ccc; /* Lighter text for description */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 15px;
+                justify-content: center; /* Center items on smaller screens */
+            }
+
+            header nav ul {
+                width: 100%; /* Full width for nav on smaller screens */
+                margin-top: 15px;
+            }
+
+            .hero-section h1 {
+                font-size: 48px;
+            }
+
+            .hero-section .subtitle {
+                font-size: 18px;
+            }
+
+            .pros-grid {
+                gap: 20px;
+            }
+
+            .pro-card {
+                flex: 0 0 calc(50% - 20px); /* 2 cards per row on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section h1 {
+                font-size: 36px;
+            }
+
+            .hero-section .subtitle {
+                font-size: 16px;
+            }
+
+            .hero-section button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+
+            .pros-section h2 {
+                font-size: 28px;
+            }
+
+            .pro-card {
+                flex: 0 0 calc(100% - 20px); /* 1 card per row on mobile */
+            }
+
+            .pro-card img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="header-logo">
+            <span role="img" aria-label="smiley face">&#128512;</span> SmileSchool
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Get schooled</h1>
+                <p class="subtitle"><span>SMILES</span> <span>GRIN</span> <span>LAUGH</span></p>
+                <button>REGISTER FOR FREE</button>
+            </div>
+
+            <div class="pros-section">
+                <h2><span>Learn</span> from the <span>pros</span></h2>
+                <div class="pros-grid">
+                    <div class="pro-card">
+                        <img src="https://placehold.co/150x150/FF6565/FFFFFF?text=PM" alt="Phillip Massey">
+                        <h3>Phillip Massey</h3>
+                        <p>« Smile of the year »<br>2018 - 2019</p>
+                    </div>
+                    <div class="pro-card">
+                        <img src="https://placehold.co/150x150/FF6565/FFFFFF?text=NL" alt="Nannie Lawrence">
+                        <h3>Nannie Lawrence</h3>
+                        <p>Best « Little smile »<br>2017</p>
+                    </div>
+                    <div class="pro-card">
+                        <img src="https://placehold.co/150x150/FF6565/FFFFFF?text=BW" alt="Bruce Walters">
+                        <h3>Bruce Walters</h3>
+                        <p>Best « Friend Smile »<br>live performance 2019</p>
+                    </div>
+                    <div class="pro-card">
+                        <img src="https://placehold.co/150x150/FF6565/FFFFFF?text=HH" alt="Henry Hughes">
+                        <h3>Henry Hughes</h3>
+                        <p>« Best Friend »<br>2016 - 2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer would typically go here -->
+</body>
+</html>
