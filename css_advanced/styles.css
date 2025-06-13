@@ -404,6 +404,42 @@
     </div>
 </section>
 
+<!-- ... (previous HTML content, after the closing tutorials-section) ... -->
+
+<section class="membership-section">
+    <div class="container">
+        <h2>Free <span>membership</span></h2>
+        <div class="membership-features">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <i class="far fa-grin-beam smile-icon"></i> <!-- Smiling emoji icon -->
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <i class="far fa-grin-beam smile-icon"></i>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <i class="far fa-grin-beam smile-icon"></i>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <i class="far fa-grin-beam smile-icon"></i>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <button class="register-button">REGISTER FOR FREE</button>
+    </div>
+</section>
+
+<!-- ... (rest of your HTML, typically the footer) ... -->
 <!-- ... (rest of your HTML, typically the footer) ... -->
 
 <!-- ... (rest of your HTML, typically the footer would follow) ... -->
