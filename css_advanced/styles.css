@@ -470,10 +470,25 @@
 </section>
 
 <!-- ... (rest of your HTML, typically the footer) ... -->
-<!-- ... (rest of your HTML, typically the footer) ... -->
-<!-- ... (rest of your HTML, typically the footer) ... -->
+<!-- ... (previous HTML content, after the closing faq-section) ... -->
 
-<!-- ... (rest of your HTML, typically the footer would follow) ... -->
-    <!-- Footer would typically go here -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <a href="#" class="footer-logo">
+                <span role="img" aria-label="smiley face">&#128512;</span> SmileSchool
+            </a>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy;smileschool 2020</p>
+    </div>
+</footer>
+
+</body>
+</html>
      </body>
 </html>
